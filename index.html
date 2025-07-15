@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veloura | متجر أزياء نسائية">
+    <title>Veloura - لمسة من الأناقة</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Veloura</h1>
+        <nav>
+            <ul>
+                <li><a href="#collections">التشكيلة</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle">🌙</button>
+    </header>
+
+    <section id="hero">
+        <h2>أناقة تُحاكي شخصيتك</h2>
+        <p>اكتشفي تشكيلتنا الجديدة من الأزياء الراقية</p>
+    </section>
+
+    <section id="collections">
+        <h2>تشكيلتنا</h2>
+        <div class="filters">
+            <button onclick="filterItems('all')">الكل</button>
+            <button onclick="filterItems('فساتين')">فساتين</button>
+            <button onclick="filterItems('عبايات')">عبايات</button>
+            <button onclick="filterItems('عروض')">عروض</button>
+        </div>
+        <div class="products" id="productGrid"></div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © Veloura 2025</p>
+        <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">TikTok</a>
+        </div>
+    </footer>
+</body>
+</html>

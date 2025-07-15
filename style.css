@@ -1,0 +1,49 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0; padding: 0;
+    background: #fff; color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+body.dark {
+    background: #222; color: #eee;
+}
+header {
+    display: flex; justify-content: space-between;
+    align-items: center; padding: 1rem 2rem;
+    background: #f8e6ef;
+}
+nav ul { list-style: none; display: flex; gap: 1rem; }
+nav a { text-decoration: none; color: #222; }
+#hero {
+    text-align: center; padding: 3rem 1rem;
+    background: url('images/banner.jpg') no-repeat center / cover;
+    color: white;
+}
+.filters { text-align: center; margin-top: 2rem; }
+.filters button {
+    margin: 0.3rem; padding: 0.6rem 1.2rem;
+    border: none; background: #f4dada; cursor: pointer;
+}
+.products {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem; padding: 2rem;
+}
+.product {
+    border: 1px solid #ccc; border-radius: 12px;
+    padding: 1rem; text-align: center;
+    background: #fff;
+}
+.product img {
+    width: 100%; height: auto;
+    transition: transform 0.3s ease;
+}
+.product img:hover {
+    transform: scale(1.05);
+}
+footer {
+    background: #f8e6ef;
+    text-align: center; padding: 1rem;
+}
+.socials a {
+    margin: 0 0.5rem; color: #c06; text-decoration: none;
+}
